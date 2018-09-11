@@ -1,0 +1,13 @@
+C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\bin\Debug\PhoneEditorApp.exe.config
+C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\bin\Debug\PhoneEditorApp.exe
+C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\bin\Debug\PhoneEditorApp.pdb
+C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\bin\Debug\EPPlus.dll
+C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\bin\Debug\EPPlus.xml
+C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\obj\Debug\PhoneEditorApp.csprojAssemblyReference.cache
+C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\obj\Debug\PhoneEditorApp.Form1.resources
+C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\obj\Debug\PhoneEditorApp.Properties.Resources.resources
+C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\obj\Debug\PhoneEditorApp.csproj.GenerateResource.cache
+C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\obj\Debug\PhoneEditorApp.csproj.CoreCompileInputs.cache
+C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\obj\Debug\PhoneEditorApp.csproj.CopyComplete
+C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\obj\Debug\PhoneEditorApp.exe
+C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\obj\Debug\PhoneEditorApp.pdb
