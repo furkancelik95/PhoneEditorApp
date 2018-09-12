@@ -123,7 +123,7 @@ namespace PhoneEditorApp
                     }
                     if (phone.Contains("-") || phone.Contains("&")  || phone.Contains("–") || phone.Contains("\"") || phone.Contains("|") || phone.Contains("/") && phone.Length >= 11)
                     {
-                        phone = phone.Replace("\"","").Replace("&","").Replace("/","").Replace("|","").Replace("–","").Replace("-", "").Replace(" - ", "").Replace("   ", "").Replace("  ", "").Replace(")", "").Replace("-", "").Replace(" ", "").Replace("(", "").Replace(")", "").Replace("&", "").Replace(",", "").Replace(".", "").Replace("+90", "").Replace("-", "").Trim();
+                        phone = phone.Replace("   ","").Replace("\"","").Replace("&","").Replace("/","").Replace("|","").Replace("–","").Replace("-", "").Replace(" - ", "").Replace("   ", "").Replace("  ", "").Replace(")", "").Replace("-", "").Replace(" ", "").Replace("(", "").Replace(")", "").Replace("&", "").Replace(",", "").Replace(".", "").Replace("+90", "").Replace("-", "").Trim();
                         if (phone.Length == 10)
                         {
                             phone = phone.Substring(0, 10);
@@ -195,6 +195,35 @@ namespace PhoneEditorApp
                             string phone8 = phone.Substring(20, 2);
 
                             string resultphone = "(0" + phone1 + ") " + phone2 + " " + phone3 + " " + phone4 + " / " + "(0" + phone5 + ") " + phone6 + " " + phone7 + " " + phone8;
+                            worksheet.Cells[i, colCnt + 1].Value = resultphone;
+                            column++;
+                        }
+                        else if(phone.Length == 18 && phone.Substring(0, 1) == "0")
+                        {
+                            phone = phone.Substring(1);
+                            string phone1 = phone.Substring(0, 3);
+                            string phone2 = phone.Substring(3, 3);
+                            string phone3 = phone.Substring(6, 2);
+                            string phone4 = phone.Substring(8, 2);
+
+                            string phone5 = phone.Substring(10, 3);
+                            string phone6 = phone.Substring(13, 2);
+                            string phone7 = phone.Substring(15, 2);
+                            string resultphone = "(0" + phone1 + ") " + phone2 + " " + phone3 + " " + phone4 + "/ " + phone5 + " " + phone6 + " " + phone7;
+                            worksheet.Cells[i, colCnt + 1].Value = resultphone;
+                            column++;
+                        }
+                        else if (phone.Length == 17 && phone.Substring(0, 1) != "0")
+                        {
+                            string phone1 = phone.Substring(0, 3);
+                            string phone2 = phone.Substring(3, 3);
+                            string phone3 = phone.Substring(6, 2);
+                            string phone4 = phone.Substring(8, 2);
+
+                            string phone5 = phone.Substring(10, 3);
+                            string phone6 = phone.Substring(13, 2);
+                            string phone7 = phone.Substring(15, 2);
+                            string resultphone = "(0" + phone1 + ") " + phone2 + " " + phone3 + " " + phone4 + "/ " + phone5 + " " + phone6 + " " + phone7;
                             worksheet.Cells[i, colCnt + 1].Value = resultphone;
                             column++;
                         }
@@ -417,7 +446,7 @@ namespace PhoneEditorApp
                     }
                     if (phone.Contains("-") || phone.Contains("&") || phone.Contains("–") || phone.Contains("\"") || phone.Contains("|") || phone.Contains("/") && phone.Length >= 11)
                     {
-                        phone = phone.Replace("\"", "").Replace("&", "").Replace("/", "").Replace("|", "").Replace("–", "").Replace("-", "").Replace(" - ", "").Replace("   ", "").Replace("  ", "").Replace(")", "").Replace("-", "").Replace(" ", "").Replace("(", "").Replace(")", "").Replace("&", "").Replace(",", "").Replace(".", "").Replace("+90", "").Replace("-", "").Trim();
+                        phone = phone.Replace("   ", "").Replace("\"", "").Replace("&", "").Replace("/", "").Replace("|", "").Replace("–", "").Replace("-", "").Replace(" - ", "").Replace("   ", "").Replace("  ", "").Replace(")", "").Replace("-", "").Replace(" ", "").Replace("(", "").Replace(")", "").Replace("&", "").Replace(",", "").Replace(".", "").Replace("+90", "").Replace("-", "").Trim();
                         if (phone.Length == 10)
                         {
                             phone = phone.Substring(0, 10);
@@ -489,6 +518,35 @@ namespace PhoneEditorApp
                             string phone8 = phone.Substring(20, 2);
 
                             string resultphone = "+90 (" + phone1 + ") " + phone2 + " " + phone3 + " " + phone4 + " / " + "(0" + phone5 + ") " + phone6 + " " + phone7 + " " + phone8;
+                            worksheet.Cells[i, colCnt + 1].Value = resultphone;
+                            column++;
+                        }
+                        else if (phone.Length == 18 && phone.Substring(0, 1) == "0")
+                        {
+                            phone = phone.Substring(1);
+                            string phone1 = phone.Substring(0, 3);
+                            string phone2 = phone.Substring(3, 3);
+                            string phone3 = phone.Substring(6, 2);
+                            string phone4 = phone.Substring(8, 2);
+
+                            string phone5 = phone.Substring(10, 3);
+                            string phone6 = phone.Substring(13, 2);
+                            string phone7 = phone.Substring(15, 2);
+                            string resultphone = "(0" + phone1 + ") " + phone2 + " " + phone3 + " " + phone4 + "/ " + phone5 + " " + phone6 + " " + phone7;
+                            worksheet.Cells[i, colCnt + 1].Value = resultphone;
+                            column++;
+                        }
+                        else if (phone.Length == 17 && phone.Substring(0, 1) != "0")
+                        {
+                            string phone1 = phone.Substring(0, 3);
+                            string phone2 = phone.Substring(3, 3);
+                            string phone3 = phone.Substring(6, 2);
+                            string phone4 = phone.Substring(8, 2);
+
+                            string phone5 = phone.Substring(10, 3);
+                            string phone6 = phone.Substring(13, 2);
+                            string phone7 = phone.Substring(15, 2);
+                            string resultphone = "(0" + phone1 + ") " + phone2 + " " + phone3 + " " + phone4 + "/ " + phone5 + " " + phone6 + " " + phone7;
                             worksheet.Cells[i, colCnt + 1].Value = resultphone;
                             column++;
                         }
@@ -711,7 +769,7 @@ namespace PhoneEditorApp
                     }
                     if (phone.Contains("-") || phone.Contains("&")  || phone.Contains("–") || phone.Contains("\"") || phone.Contains("|") || phone.Contains("/") && phone.Length >= 11)
                     {
-                        phone = phone.Replace("\"","").Replace("&","").Replace("/","").Replace("|","").Replace("–","").Replace("-", "").Replace(" - ", "").Replace("   ", "").Replace("  ", "").Replace(")", "").Replace("-", "").Replace(" ", "").Replace("(", "").Replace(")", "").Replace("&", "").Replace(",", "").Replace(".", "").Replace("+90", "").Replace("-", "").Trim();
+                        phone = phone.Replace("   ", "").Replace("\"","").Replace("&","").Replace("/","").Replace("|","").Replace("–","").Replace("-", "").Replace(" - ", "").Replace("   ", "").Replace("  ", "").Replace(")", "").Replace("-", "").Replace(" ", "").Replace("(", "").Replace(")", "").Replace("&", "").Replace(",", "").Replace(".", "").Replace("+90", "").Replace("-", "").Trim();
                         if (phone.Length == 10)
                         {
                             phone = phone.Substring(0, 10);
@@ -783,6 +841,35 @@ namespace PhoneEditorApp
                             string phone8 = phone.Substring(20, 2);
 
                             string resultphone = "(" + phone1 + ") " + phone2 + " " + phone3 + " " + phone4 + " / " + "(0" + phone5 + ") " + phone6 + " " + phone7 + " " + phone8;
+                            worksheet.Cells[i, colCnt + 1].Value = resultphone;
+                            column++;
+                        }
+                        else if (phone.Length == 18 && phone.Substring(0, 1) == "0")
+                        {
+                            phone = phone.Substring(1);
+                            string phone1 = phone.Substring(0, 3);
+                            string phone2 = phone.Substring(3, 3);
+                            string phone3 = phone.Substring(6, 2);
+                            string phone4 = phone.Substring(8, 2);
+
+                            string phone5 = phone.Substring(10, 3);
+                            string phone6 = phone.Substring(13, 2);
+                            string phone7 = phone.Substring(15, 2);
+                            string resultphone = "(0" + phone1 + ") " + phone2 + " " + phone3 + " " + phone4 + "/ " + phone5 + " " + phone6 + " " + phone7;
+                            worksheet.Cells[i, colCnt + 1].Value = resultphone;
+                            column++;
+                        }
+                        else if (phone.Length == 17 && phone.Substring(0, 1) != "0")
+                        {
+                            string phone1 = phone.Substring(0, 3);
+                            string phone2 = phone.Substring(3, 3);
+                            string phone3 = phone.Substring(6, 2);
+                            string phone4 = phone.Substring(8, 2);
+
+                            string phone5 = phone.Substring(10, 3);
+                            string phone6 = phone.Substring(13, 2);
+                            string phone7 = phone.Substring(15, 2);
+                            string resultphone = "(0" + phone1 + ") " + phone2 + " " + phone3 + " " + phone4 + "/ " + phone5 + " " + phone6 + " " + phone7;
                             worksheet.Cells[i, colCnt + 1].Value = resultphone;
                             column++;
                         }
@@ -982,7 +1069,7 @@ namespace PhoneEditorApp
             textBox1.Text = textBox1.Text.Replace(".xlsx", "");
             FileInfo newfile2 = new FileInfo(textBox1.Text + "_edit" + ".xlsx");
             package.SaveAs(newfile2);
-            MessageBox.Show("İşlem Tamamlandı. Sonuç dosyası uygulamanın bulunduğu klasöre kaydedilmiştir");
+            MessageBox.Show("İşlem Tamamlandı. Çalışmanın olduğu klasöre kaydedildi.");
         }
         public static int sutunBul(string harf)
         {

@@ -3,7 +3,6 @@ C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\bin\Debug\PhoneEditor
 C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\bin\Debug\PhoneEditorApp.pdb
 C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\bin\Debug\EPPlus.dll
 C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\bin\Debug\EPPlus.xml
-C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\obj\Debug\PhoneEditorApp.csprojAssemblyReference.cache
 C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\obj\Debug\PhoneEditorApp.Form1.resources
 C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\obj\Debug\PhoneEditorApp.Properties.Resources.resources
 C:\Users\fcelik\source\repos\PhoneEditorApp\PhoneEditorApp\obj\Debug\PhoneEditorApp.csproj.GenerateResource.cache
